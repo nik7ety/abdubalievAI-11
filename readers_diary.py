@@ -20,7 +20,7 @@ while True:
     print("0 - Свалить")
     cheese = input("!): ")
     if cheese in lettersB or cheese in lettersC:
-        print("Напишите цифрой, идиот")
+        print("Напишите цифрой")
     elif cheese == "" or cheese == "           ":
         print("Вы должны хоть что то написать")
 
@@ -37,3 +37,5 @@ while True:
         for sh in poop_list:
             indx = poop_list.index(sh)
             print(f"{indx+1}. {sh}")
+
+    elif cheese == "3":
