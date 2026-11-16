@@ -39,3 +39,4 @@ while True:
             print(f"{indx+1}. {sh}")
 
     elif cheese == "3":
+            pass
