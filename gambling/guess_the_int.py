@@ -1,14 +1,13 @@
 def find_the_int():
     freakly_cifers = random.randint(1,100)
     user_trys = 0
-    smthg = input("Введи сюда что угодно: ")
     while True:
         try:
             user_guess = int(input("Введи число: "))
         except ValueError:
             print("ЧИСЛО, ИНФУЗОРИЯ!")
             user_trys += 1
-        if user_trys > 10:
+        if user_trys > 10 or user_guess == 676767:
             give_up = input("Сдаешься?)").lower()
             if give_up == "yes" or give_up == "да":
                 print(f"Игра окончена, загаданная цифра: {freakly_cifers}")
